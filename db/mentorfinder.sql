@@ -73,8 +73,13 @@ CREATE TABLE `mentors` (
 INSERT INTO `mentors` (`id`, `name`, `image`, `description`, `department`, `sem`, `rating`, `skills`) VALUES
 (1, 'Akshay Sharma', 'imgmentor1.png', 'Description 1', 'MCA', 3, 4, 'React JS'),
 (2, 'Shazma Siddiqui', 'imgmentor2.png', 'Description 2', 'MCA', 3, 4, 'Web Development'),
-(3, 'Khushi Gupta', 'imgmentor3.png', 'Description 3', 'MCA', 3, 4, 'Data Structures');
-
+(3, 'Khushi Gupta', 'imgmentor3.png', 'Description 3', 'MCA', 3, 4, 'Data Structures'),
+(4, 'Harshit Gupta', 'imgmentor4.png', 'Description4', 'B.Tech', 5, 4, 'Data Structures'),
+(5, 'Aayushi Singh', 'imgmentor5.png', 'Description5', 'B.Tech', 4, 5, 'Data Structures'),
+(6, 'Yash Shah', 'imgmentor6.png', 'Description6', 'MCA', 3, 5, 'Web Development'),
+(7, 'Shivani Singh', 'imgmentor7.png', 'Description7', 'B.Tech', 5, 4, 'Web Development'),
+(8, 'Raj Malhotra', 'imgmentor8.png', 'Description8', 'MCA', 5, 4, 'React JS')
+,(9, 'Tarun Sharma', 'imgmentor9.png', 'Description9', 'MCA', 6, 5, 'React JS');
 --
 -- Indexes for dumped tables
 --
