@@ -36,7 +36,7 @@ if (isset($_SESSION['email'])) {
 			<div class="container">
 				<div class="row banner_content">
 					<div class="col-md-8 col-md-offset-2 blocks">
-						<h2 style="color: white">Find and Mentor</h2><br>
+						<h2 style="color: white">Find a Mentor</h2><br>
 								<a href="mentors.php" class="btn btn-blue btn-primary">Search now</a>
 					</div>
 				</div>
