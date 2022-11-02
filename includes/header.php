@@ -10,11 +10,9 @@
         </div>
         <div class="collapse navbar-collapse " id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-				<li><a href = "about.php" style="color: white"><span class = "glyphicon glyphicon-info-sign"></span> About Us</a></li>
-                <?php
+				<?php
                 if (isset($_SESSION['email'])) {
                     ?>
-                    <li><a href = "previous_mentorships.php" style="color: white"><span class = "glyphicon glyphicon-calendar"></span>Previous Mentorships</a></li>
                     <li><a href = "change_password.php" style="color: white"><span class = "glyphicon glyphicon-cog"></span> Change Password</a></li>
                     <li><a href = "logout_script.php" style="color: white"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
                     <?php
