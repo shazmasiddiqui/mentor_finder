@@ -32,7 +32,7 @@ if (isset($_SESSION['email'])) {
 	<!--Content Start-->
 	<div class="content">
 		<!--Main banner image-->
-		<div class="banner_image">
+		<div class="banner_image" id="banner">
 			<div class="container">
 				<div class="row banner_content">
 					<div class="col-md-8 col-md-offset-2 blocks">
@@ -47,5 +47,19 @@ if (isset($_SESSION['email'])) {
 	<!--Content Start-->
 	
 	<?php include 'includes/footer.php'; ?>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#banner",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
 </body>
 </html>

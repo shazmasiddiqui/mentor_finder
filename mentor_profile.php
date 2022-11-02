@@ -13,28 +13,28 @@ require("includes/common.php");
     </head>
     <body>
         <div class="container content">
-            <?php include 'includes/header.php'; 
-			include 'includes/check-if-added.php';
-			?>
+            <?php include 'includes/header.php';
+include 'includes/check-if-added.php';
+?>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
 					<?php
-					$id = $_GET['id'];
-					$query = "SELECT * FROM mentors WHERE id=$id";
-					$result = mysqli_query($con, $query)or die(mysqli_error($con));
-					$row = mysqli_fetch_array($result)
-					?>
+        $id = $_GET['id'];
+$query = "SELECT * FROM mentors WHERE id=$id";
+$result = mysqli_query($con, $query)or die(mysqli_error($con));
+$row = mysqli_fetch_array($result)
+?>
 					<div class="panel panel-custom" >
 						<div class="panel-heading panel-col">
 							<h4>Mentor's Profile</h4>
 						</div>
 						<div class="panel-body">
 							<div class="img-block">
-								<div class="img-icon"><?php 
-									$name=$row['name'];
-									$words = explode(" ", $name);
-									echo $words[0][0].$words[1][0];
-									?>
+								<div class="img-icon"><?php
+                $name=$row['name'];
+$words = explode(" ", $name);
+echo $words[0][0].$words[1][0];
+?>
 								</div>
 							</div>
 							<div class="text-block">
@@ -43,22 +43,26 @@ require("includes/common.php");
 								<p><?php echo $row['department']; ?></p>
 								<p><?php echo $row['sem']; ?> Sem</p>
 								<hr>
-								<p><?php echo $name; ?> is a highly sought after dentist who caters to all age groups. His precision in hand work and warmth make him the most preferred dentist in his area. He keeps himself updated to the latest trends in dentistry by attending international and national conferences throughout the year. He is a member of Indian Dental Association. He believes in providing best quality services at affordable cost. His international clients are predominantly from Europe and the Middle East.</p>
+								<p> 
+								Hello World! This is <?php echo $name; ?>, I'm currently pursuing <?php echo $row['department'] ?> from NIT Raipur, apart from my qualification I'm truly dedicated to programming and web dev.
+I love to do competitive programming and for that, I prefer CodeChef, HackerRank. Also, I actively participate in various coding contests.
+I'm truly passionate about my goals and consider myself a hardworking person who gives 100% towards any task which I opt for.
+								</p>
 								<div class="pull-right">
 									<?php if (!isset($_SESSION['email'])) { ?>
 										<a href="login.php" role="button" class="btn btn-primary btn-blue">Request Now</a>
 										<?php
-										} else {
-										//We have created a function to check whether this particular product is added to cart or not.
-										if (check_if_confirmed($id)) { //This is same as if(check_if_booked != 0)
-											echo '<a class="btn btn-success btn-green" disabled>Confirmed</a>';
-										} else {
-											?>
+									} else {
+                                        //We have created a function to check whether this particular product is added to cart or not.
+									    if (check_if_confirmed($id)) { //This is same as if(check_if_booked != 0)
+									        echo '<a class="btn btn-success btn-green" disabled>Confirmed</a>';
+									    } else {
+									        ?>
 											<a href="request_start.php?id=<?php echo $id ?>" class="btn btn-primary btn-blue">Request now</a>
 											<?php
-										}
+									    }
 									}
-									?>	
+?>	
 								</div>
 							</div>
 						</div>

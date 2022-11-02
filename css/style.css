@@ -17,7 +17,6 @@ a.text{
 
 .banner_image {
     text-align: center;
-    background: url(../img/banner.jpg) no-repeat center center;
     background-size: cover;
 	min-height:600px;
 }
