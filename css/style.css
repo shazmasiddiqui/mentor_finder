@@ -1,0 +1,214 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+	padding-top:100px;
+}
+a:hover{
+	text-decoration:none;
+}
+a.text{
+    color: white;
+}
+.content{
+    min-height: 600px;
+}
+
+.banner_image {
+    text-align: center;
+    background: url(../img/banner.jpg) no-repeat center center;
+    background-size: cover;
+	min-height:600px;
+}
+
+.banner_content {
+	padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.blocks{
+	background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+}
+
+.thumbnail > img{
+	max-width:60%;
+	padding:40px;
+}
+
+.custom-btn{
+	display:block;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight:700;
+	font-size:18px;
+	padding:10px;
+}
+
+.outer-block{
+	overflow:hidden;
+}
+
+.img-block,.text-block{
+	padding:20px;
+}
+
+.text-block{
+	color:#7a7a7a;
+	overflow:hidden;
+}
+
+/*Background and button color*/
+.img-icon, .btn-blue, .panel-col,.btn-col:hover{
+    background: #14bef0;
+	color:#fff;
+}
+
+.btn-green{
+	border:0;
+}
+
+.price, .bold-link, .btn-col{
+	color:#14bef0;
+}
+/*Background and button color*/
+
+.bold-link{
+	font-weight:bold;
+	padding-right:10px;
+}
+ 
+.btn-blue{
+	border:0;
+}
+
+.btn-col{
+    border-color:#14bef0;
+    background-color: #fff;
+}
+
+.btn-disabled{
+	background: #14bef0;
+	color:#fff;
+	opacity:0.6;
+}
+
+.img-icon{
+	height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin: auto;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.name{
+	color:#000;
+	font-weight:700;
+}
+
+.price{
+	font-size:18px;
+	font-weight:700;
+}
+
+.time-slot-form .radio{
+	display:inline-block;
+	padding-right:10px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#physician:before, #neurologist:before, #dentist:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+
+#login-panel .panel-footer{
+    font-weight:normal;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    color:#5e5e5e;
+    bottom: 0;
+    width: 100%;
+	border-top:1px solid #e7e7e7;
+}
+
+.red{
+    color:red;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+.panel-custom{
+	border:1px solid #EBEBEB;
+}
+
+.panel-custom .panel-heading{
+    border-bottom: 1px solid #EBEBEB;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+#banner_content {
+	padding-bottom: 15%;
+}
+footer{
+	text-align:left;
+}
+}
+@media(min-width:768px){
+.img-block,.text-block{
+float:left;
+}
+.img-block{
+	width:30%;
+}
+.text-block{
+	width:70%;
+}
+}
+
+
+/* Removes up/down pointer from all fields */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Quote block in About page*/
+@import url('https://fonts.googleapis.com/css?family=Cantata+One&display=swap');
+
+.quote-block{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.quote-block:before, .quote-block:after{
+	font-family: 'Cantata One', serif;
+	display:block;
+	font-size:50px;
+	line-height:20px;
+}
+.quote-block:before{
+	content:'\201C';
+}
+.quote-block:after{
+	content: '\201D';
+	text-align:right;
+}
+/*Quote block in About page*/
+
